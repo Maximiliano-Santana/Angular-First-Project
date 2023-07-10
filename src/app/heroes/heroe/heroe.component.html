@@ -1,0 +1,26 @@
+
+
+<div class="card">    
+    <h1 class="card__name">{{CapitalizedName}}</h1>
+
+    <div class="card__info">
+        <img src="../../../assets/HeroesImages/LightWizard.jpg" alt="img">
+        <dl class="card__info__list">
+            <dt>Power:</dt>
+            <dd>{{power}}</dd>
+            
+            <dt>Heal:</dt>
+            <dd>{{heal}}</dd>
+            
+            <dt>Damage:</dt>
+            <dd>{{damage}}</dd>            
+        </dl>
+    </div>
+
+    <div class="card__butons">
+        <button (click)="addHeal()">Add Heal</button>
+        <button *ngIf="toggleButton" (click)="changeHero();">Change Hero</button>
+    </div>
+        
+</div>
+
